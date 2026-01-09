@@ -2,9 +2,9 @@ Built a layered spring boot application following the controller service reposit
 
 Developed Employee and Department modules with complete CRUD REST APIs for create, read, update, and delete operations using proper HTTP methods.
 
-Established relational mapping between Employee and Department using JPA or Hibernate annotations resulting in correct SQL table relationships and foreign key constraints.
+Established relational mapping between Employee and Department using JPA or Hibernate annotations resulting in correct Sql table relationships and foreign key constraints.
 
-Used spring data JPA to handle database operations and automatically generate SQL queries reducing the need to write manual SQL queries.
+Used spring data JPA to handle database operations and automatically generate Sql queries reducing the need to write manual Sql queries.
 
 Implemented dependency injection through constructor injection to connect controllers and services.
 The application follows a layered architecture where each layer has limited access.
