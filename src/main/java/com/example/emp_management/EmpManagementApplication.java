@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController  // Add this to make the class also a REST controller
+@RestController
 public class EmpManagementApplication {
 
     public static void main(String[] args) {
@@ -14,7 +14,6 @@ public class EmpManagementApplication {
         System.out.println("Application Started Successfully!");
     }
 
-    // Test endpoint
     @GetMapping("/")
     public String home() {
         return "Spring Boot is running";

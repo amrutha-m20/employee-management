@@ -5,16 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-//the controller interacts with the service layer which internally interacts with the repository layer which handles the sql queries internally
-/*
-POST request → Controller receives JSON → maps to Employee object
-          ↓
-Controller calls Service → Service object already has Repository object injected
-          ↓
-Repository object converts Employee object → SQL → inserts into DB
-          ↓
-Repository returns saved Employee → Service → Controller → Response to client
-*/
+
 
 @Service
 public class EmployeeService {
@@ -46,9 +37,9 @@ public class EmployeeService {
     public boolean deleteEmployee(Long id){
         if(repository.existsById(id)){
             repository.deleteById(id);
-            return true; // deleted successfully
+            return true;
         }
-        return false; // ID not found
+        return false;
     }
 
 
