@@ -8,9 +8,9 @@ Used spring data JPA to handle database operations and automatically generate SQ
 
 Implemented dependency injection through constructor injection to connect controllers and services.
 The application follows a layered architecture where each layer has limited access.
-The Controller layer can access only the Service layer and never directly interacts with the database.
-The Service layer contains the business logic and communicates only with the Repository layer.
-The Repository layer is responsible for database access and interacts with the database using JPA.
+The controller layer can access only the service layer and never directly interacts with the database.
+The service layer contains the logic and communicates only with the repository layer.
+The repository layer is responsible for database access and interacts with the database using JPA.
 These layers are connected using dependency injection for loose coupling.
 
 Added Jakarta Bean Validation at the model level and request validation using @Valid to ensure only valid data is stored.
