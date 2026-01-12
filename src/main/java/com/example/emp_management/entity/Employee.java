@@ -34,6 +34,10 @@ public class Employee {
     @JoinColumn(name = "department_id", nullable = false)
   //  @JsonBackReference
     private Department department;
+
+      @ManyToOne
+    @JoinColumn(name = "project_id")
+    private Project project;
 }
 
 
